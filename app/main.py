@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes.file_ops import router as file_ops_router
+from app.routes.router import router as router
 
 app = FastAPI()
 
@@ -11,4 +11,4 @@ async def root():
     return 'Funciona!'
 
 
-app.include_router(file_ops_router, prefix="/files", tags=["Files"])
+app.include_router(router, prefix="/compass", tags=["Files"])

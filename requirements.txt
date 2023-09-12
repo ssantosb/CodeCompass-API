@@ -3,3 +3,13 @@ uvicorn==0.23.2
 azure-storage-file-share
 starlette~=0.27.0
 python-multipart
+langchain~=0.0.286
+openai~=0.28.0
+sentence-transformers
+unstructured
+chromadb[web-server]
+sqlalchemy
+pydantic
+tiktoken
+pandas
+unstructured[pdf]
